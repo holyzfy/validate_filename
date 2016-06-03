@@ -1,8 +1,11 @@
 {
   "name": "validate_filename",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Validate the file and folder names",
   "main": "index.js",
+  "bin": {
+    "validate_filename": "index.js"
+  },
   "scripts": {
     "eslint": "files=`git diff --staged --name-only --diff-filter=ACMRTU | grep -ie '\\.js$'`; if [ \"${files:=empty}\" != \"empty\" ]; then eslint -c .eslintrc.json $files; fi",
     "test": "echo \"Error: no test specified\" && exit 1"
