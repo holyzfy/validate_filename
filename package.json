@@ -1,0 +1,33 @@
+{
+  "name": "validate_filename",
+  "version": "0.1.0",
+  "description": "Validate the file and folder names",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "files=`git diff --staged --name-only --diff-filter=ACMRTU | grep -ie '\\.js$'`; if [ \"${files:=empty}\" != \"empty\" ]; then eslint -c .eslintrc.json $files; fi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holyzfy/validate_filename.git"
+  },
+  "keywords": [
+    "check",
+    "validate",
+    "filename",
+    "pathname"
+  ],
+  "author": "holyzfy <zhaofuyun202@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holyzfy/validate_filename/issues"
+  },
+  "homepage": "https://github.com/holyzfy/validate_filename#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "ghooks": "^1.2.1"
+  }
+}
