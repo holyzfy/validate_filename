@@ -1,6 +1,6 @@
 {
   "name": "validate_filename",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Validate the file and folder names",
   "main": "index.js",
   "scripts": {

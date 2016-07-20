@@ -6,12 +6,12 @@ function start () {
     var program = new Command('validate_filename');
     program.version(package.version)
         .description(package.description)
-        .usage('<options> <file ...>')
+        .usage('<options> [file ...]')
         .option('-e, --pattern <pattern>', 'a string that specifies the pattern of the regular expression')
         .option('-m, --message <message>', 'output errors when invalid')
         .parse(process.argv);
 
-    if(!(program.pattern && program.message && program.args.length)) {
+    if(!(program.pattern && program.message)) {
         return program.help();
     }
     

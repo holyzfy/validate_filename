@@ -11,7 +11,7 @@ npm install
 ## Usage
 
 ```console
-Usage: node node_modules/validate_filename/index.js <options> <file ...>
+Usage: node node_modules/validate_filename/index.js <options> [file ...]
 
 validate the file and folder names
 
