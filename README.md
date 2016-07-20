@@ -5,13 +5,13 @@ Validate the file and folder names
 ## Install
 
 ```
-npm install -g validate_filename
+npm install
 ```
 
 ## Usage
 
 ```console
-Usage: validate_filename <options> <file ...>
+Usage: node node_modules/validate_filename/index.js <options> <file ...>
 
 validate the file and folder names
 
@@ -29,11 +29,11 @@ Options:
 - check one or more paths
 
     ```
-    validate_filename -e '^[a-z0-9_./]+$' -m 'Use snake_case for file and folder names' test.html UPPERCASE.html path/to/test-file.css images/logo.png
+    node node_modules/validate_filename/index.js -e '^[a-z0-9_./]+$' -m 'Use snake_case for file and folder names' test.html UPPERCASE.html path/to/test-file.css images/logo.png
     ```
 
 - use `ls` command
 
     ```
-    validate_filename -e '^[a-z0-9_./]+$' -m 'Use snake_case for file and folder names' $(ls)
+    node node_modules/validate_filename/index.js -e '^[a-z0-9_./]+$' -m 'Use snake_case for file and folder names' $(ls)
     ```

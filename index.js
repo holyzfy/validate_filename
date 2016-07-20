@@ -1,5 +1,3 @@
-#! /usr/bin/env node
-
 var Command = require('commander').Command;
 var colors = require('colors');
 var package = require('./package.json');
